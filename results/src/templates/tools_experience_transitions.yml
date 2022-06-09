@@ -1,0 +1,44 @@
+id: "${parentId}_experience_transitions"
+blockType: ToolsExperienceTransitionsBlock
+titleId: blocks.tools_experience_transitions
+descriptionId: blocks.tools_experience_transitions.description
+noteId: blocks.tools_experience_transitions.note
+dataPath: "surveyApi.survey.${parentId}_experience_transitions"
+query: >
+    surveyApi {
+        survey(survey: ${surveyType}) {
+            ${parentId}_experience_transitions: tools(ids: [${toolsCategories[parentId]}]) {
+                id
+                entity {
+                    homepage {
+                        url
+                    }
+                    description
+                    name
+                    github {
+                        name
+                        url
+                    }
+                    npm {
+                        name
+                        url
+                    }
+                }
+                experienceTransitions(year: 2020) {
+                    keys
+                    nodes {
+                        choice
+                        id
+                        year
+                        count
+                    }
+                    transitions {
+                        from
+                        to
+                        count
+                        percentage
+                    }
+                }
+            }
+        }
+    }

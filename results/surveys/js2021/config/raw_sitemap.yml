@@ -377,7 +377,9 @@
 
         - id: tool_modal_hint
           template: hint
-          
+
+        - template: tools_experience_transitions
+
         - template: tools_experience_marimekko
 
         - template: section_other_tools
@@ -428,6 +430,8 @@
 
         - id: tool_modal_hint
           template: hint
+
+        - template: tools_experience_transitions
           
         - template: tools_experience_marimekko
 
@@ -492,6 +496,8 @@
 
         - id: tool_modal_hint
           template: hint
+
+        - template: tools_experience_transitions
           
         - template: tools_experience_marimekko
 
@@ -545,7 +551,9 @@
 
         - id: tool_modal_hint
           template: hint
-          
+
+        - template: tools_experience_transitions
+
         - template: tools_experience_marimekko
 
         - template: section_other_tools
@@ -596,7 +604,9 @@
 
         - id: tool_modal_hint
           template: hint
-          
+
+        - template: tools_experience_transitions
+
         - template: tools_experience_marimekko
 
         - template: section_other_tools
@@ -652,7 +662,9 @@
 
         - id: tool_modal_hint
           template: hint
-          
+
+        - template: tools_experience_transitions
+
         - template: tools_experience_marimekko
 
         - template: section_other_tools
